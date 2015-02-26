@@ -30,6 +30,14 @@ environments {
             url = "jdbc:sqlserver://127.0.0.1;databaseName=nutricash_homol"
         } 
     }
+    jenkins {
+      dataSource {
+            dbCreate = "create-drop"
+            url = "jdbc:sqlserver://ncsdev;databaseName=nutrijr_tarde"
+            username = "sa"
+            password = "Nutricash2015"
+        }
+    }
     test {
         dataSource {
             dbCreate = "create-drop"
