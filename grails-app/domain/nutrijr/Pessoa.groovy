@@ -7,9 +7,13 @@ class Pessoa {
 
 	static belongsTo = [municipio:Municipio]
 
+	static mapping = {
+		tablePerHierarchy true
+	}
+
     static constraints = {
-    	nome nullable:false, blank:false, maxSize:128
+    	nome nullable:true, blank:true, maxSize:128
     	observacoes nullable:true, blank:true, maxSize:4096
-    	municipio nullable:false
+    	municipio nullable:true
     }
 }
