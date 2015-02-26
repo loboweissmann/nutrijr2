@@ -33,17 +33,19 @@ grails.project.dependency.resolution = {
     legacyResolve false // whether to do a secondary resolve on plugin installation, not advised and here for backwards compatibility
 
     repositories {
+        /*
         inherits true // Whether to inherit repository definitions from plugins
 
         grailsPlugins()
         grailsHome()
         mavenLocal()
         grailsCentral()
-        mavenCentral()
+        mavenCentral()*/
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+        mavenRepo "http://ncsdev:8081/nexus/content/groups/Grails/"
     }
 
     dependencies {

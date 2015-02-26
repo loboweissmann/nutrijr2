@@ -8,6 +8,8 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class MunicipioController {
 
+	static scope = "session"
+
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def testolina() {
