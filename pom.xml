@@ -218,14 +218,19 @@
 
     <repositories>
         <repository>
+          <id>central</id>
+          <name>central</name>
+          <url>http://ncsdev:8081/nexus/content/repositories/central/</url>
+        </repository>
+        <repository>
             <id>grails</id>
             <name>grails</name>
-            <url>https://repo.grails.org/grails/core</url>
+            <url>http://ncsdev:8081/nexus/content/groups/Grails/</url>
         </repository>
         <repository>
             <id>grails-plugins</id>
             <name>grails-plugins</name>
-            <url>https://repo.grails.org/grails/plugins</url>
+            <url>http://ncsdev:8081/nexus/content/groups/Grails/</url>
         </repository>
     </repositories>
 
