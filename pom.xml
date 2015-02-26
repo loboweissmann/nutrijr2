@@ -223,6 +223,11 @@
           <url>http://ncsdev:8081/nexus/content/repositories/central/</url>
         </repository>
         <repository>
+            <id>3rdparty</id>
+            <name>3rdparty</name>
+            <url>http://ncsdev:8081/nexus/content/repositories/thirdparty/</url>
+        </repository>
+        <repository>
             <id>grails</id>
             <name>grails</name>
             <url>http://ncsdev:8081/nexus/content/groups/Grails/</url>
