@@ -8,7 +8,7 @@ class Pessoa {
 	static belongsTo = [municipio:Municipio]
 
 	static mapping = {
-		tablePerHierarchy true
+		tablePerHierarchy false
 	}
 
     static constraints = {

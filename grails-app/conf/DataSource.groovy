@@ -19,7 +19,7 @@ environments {
     development {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:sqlserver://127.0.0.1;databaseName=nutricash"
+            url = "jdbc:sqlserver://127.0.0.1;databaseName=nutricash_tarde"
             username = "sa"
             password = "quentecomolava"
         }

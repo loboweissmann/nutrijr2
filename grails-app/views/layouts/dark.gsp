@@ -18,6 +18,7 @@
 		<meta name="teste" value="Passei por aqui"/>
 	</head>
 	<body>
+		<h1>DARK</h1>
 		<div id="grailsLogo" role="banner">
 			<g:link uri="/">
 			<asset:image src="logotipo.png" alt="Grails"/>
@@ -26,8 +27,5 @@
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
-		
-		<asset:javascript src="nutrijr.js"/>
-		
 	</body>
 </html>
