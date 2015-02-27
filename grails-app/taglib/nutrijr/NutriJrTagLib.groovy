@@ -14,4 +14,8 @@ class NutriJrTagLib {
  		}
  	}
 
+ 	def textoSimples = {atributos, corpo ->
+ 		out << "Texto simples"
+ 	}
+
 }

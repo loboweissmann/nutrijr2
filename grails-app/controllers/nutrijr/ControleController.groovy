@@ -9,7 +9,9 @@ class ControleController {
 	def adulta(int idade) {
 		if (idade < 18) {
 			redirect(uri:"http://www.disney.com")
-		}
+		} else {
+            redirect(controller:'controle', action:'index')
+        }
 	}
 
     def oi(String nome) { 
@@ -49,6 +51,18 @@ class ControleController {
     		} else {
     			render form.errors
     		}
+    }
+
+    def retornoJSON() {
+        render(contentType:"application/json") {
+            [nome:"Henrique", cidade:"Belo Horizonte"]
+        }
+    }
+
+    def retornoXML() {
+        render(contentType:"application/xml") {
+            pessoa(nome:"Henrique", cidade:"Belo Horizonte")
+        }
     }
 
 }
